@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+class B {
+
+public:
+virtual void xfoo ( ) {
+cout << "Base" ;
+}
+double d ;
+} ;
+
+
+class A : B {
+public:
+int b ;
+virtual void xfoo ( ) {
+cout << "Derived" ;
+}
+
+} ;
+
+int main ( ) {
+A obb ;
+B& ref = obb ;
+ref . xfoo ( ) ;
+
+}
